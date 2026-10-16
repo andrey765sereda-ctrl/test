@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09090e">
+  <title>VOID CASE — Character Drop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">
+      <span class="brand-icon">V</span>
+      VOID<span class="muted">CASE</span>
+    </a>
+
+    <nav>
+      <a class="active" href="#case">Кейсы</a>
+      <a href="#contents">Персонажи</a>
+      <a href="#history">История</a>
+    </nav>
+
+    <div class="balance">
+      <span>БАЛАНС</span>
+      <strong id="balance">1 000 ₽</strong>
+      <button id="addBalance" aria-label="Пополнить демо-баланс">+</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">CHARACTER COLLECTION / 001</div>
+      <h1>VOID <span>CASE</span></h1>
+      <p>Семь персонажей. Один кейс. Твой дроп.</p>
+    </section>
+
+    <section class="case-panel" id="case">
+      <div class="panel-heading">
+        <div>
+          <div class="overline">ТЕКУЩИЙ КЕЙС</div>
+          <h2>Unknown Collection</h2>
+        </div>
+        <div class="item-count">✦ 7 ПЕРСОНАЖЕЙ</div>
+      </div>
+
+      <div class="roulette">
+        <div class="roulette-window" id="rouletteWindow">
+          <div class="roulette-track" id="rouletteTrack"></div>
+          <div class="roulette-fade fade-left"></div>
+          <div class="roulette-fade fade-right"></div>
+          <div class="pointer pointer-top"></div>
+          <div class="pointer pointer-bottom"></div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="price">
+          <span>СТОИМОСТЬ КЕЙСА</span>
+          <strong id="casePrice">100 ₽</strong>
+        </div>
+
+        <button class="open-button" id="openCase">
+          <span id="openButtonText">ОТКРЫТЬ КЕЙС</span>
+          <span>↗</span>
+        </button>
+
+        <div class="demo-note">Демо-режим · Без реальных платежей</div>
+      </div>
+
+      <div class="result" id="result" hidden>
+        <div class="overline">ТВОЙ ДРОП</div>
+        <div class="result-row">
+          <div class="result-image" id="resultImage"></div>
+          <div class="result-info">
+            <span id="resultRarity">RARE</span>
+            <h3 id="resultName">Character</h3>
+            <p>Персонаж выпал из кейса.</p>
+          </div>
+          <button id="openAgain" class="secondary-button">ЕЩЁ РАЗ</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contents" id="contents">
+      <div class="section-heading">
+        <div>
+          <div class="overline">КОЛЛЕКЦИЯ</div>
+          <h2>Содержимое кейса</h2>
+        </div>
+        <span class="section-number">01 — 07</span>
+      </div>
+      <div class="character-grid" id="characterGrid"></div>
+    </section>
+
+    <section class="history" id="history">
+      <div class="section-heading">
+        <div>
+          <div class="overline">ПОСЛЕДНИЕ ВЫПАДЕНИЯ</div>
+          <h2>История дропов</h2>
+        </div>
+        <button id="clearHistory" class="secondary-button">Очистить</button>
+      </div>
+      <div class="history-list" id="historyList">
+        <p class="empty">Здесь будут отображаться результаты открытия кейсов.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>VOID CASE</span>
+    <span>Демонстрационный фанатский проект</span>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
