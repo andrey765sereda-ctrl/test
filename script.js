@@ -28,58 +28,73 @@ const CONFIG = {
   // Все значения в пикселях исходной картинки.
   // null означает автоматическое разделение по сетке.
 
-  characters: [
-    {
-      name: "Character 01",
-      rarity: "COMMON",
-      chance: 30,
-      color: "#9296a5",
-      crop: null
-    },
-    {
-      name: "Character 02",
-      rarity: "COMMON",
-      chance: 24,
-      color: "#9296a5",
-      crop: null
-    },
-    {
-      name: "Character 03",
-      rarity: "RARE",
-      chance: 18,
-      color: "#55a7ff",
-      crop: null
-    },
-    {
-      name: "Character 04",
-      rarity: "RARE",
-      chance: 13,
-      color: "#55a7ff",
-      crop: null
-    },
-    {
-      name: "Character 05",
-      rarity: "EPIC",
-      chance: 8,
-      color: "#b77bff",
-      crop: null
-    },
-    {
-      name: "Character 06",
-      rarity: "EPIC",
-      chance: 5,
-      color: "#b77bff",
-      crop: null
-    },
-    {
-      name: "Character 07",
-      rarity: "LEGENDARY",
-      chance: 2,
-      color: "#ffbf58",
-      crop: null
-    }
-  ]
-};
+  
+characters: [
+  {
+    id: "david",
+    name: "Давид",
+    description: "Кролик, лидер трёхсотых и носитель трёх божественных реликвий",
+    rarity: "MYTHIC",
+    chance: 2,
+    color: "#ff3d5a",
+    crop: null
+  },
+  {
+    id: "pasha",
+    name: "Паша",
+    description: "Противник трёхсотых, переживший разгром",
+    rarity: "RARE",
+    chance: 20,
+    color: "#63a5ff",
+    crop: null
+  },
+  {
+    id: "misha",
+    name: "Миша",
+    description: "Тактик, участник спасения и предатель",
+    rarity: "LEGENDARY",
+    chance: 8,
+    color: "#ffb347",
+    crop: null
+  },
+  {
+    id: "kirill",
+    name: "Кирилл",
+    description: "Пукадо / Калифа — главный враг Давида",
+    rarity: "LEGENDARY",
+    chance: 10,
+    color: "#ffb347",
+    crop: null
+  },
+  {
+    id: "samson-cat",
+    name: "Самсон Кот",
+    description: "Смторит в стенку. Выходит только к Мише",
+    rarity: "EPIC",
+    chance: 15,
+    color: "#bd82ff",
+    crop: null
+  },
+  {
+    id: "syoma-cat",
+    name: "Сёма Кот",
+    description: "Бежит к маме",
+    rarity: "EPIC",
+    chance: 15,
+    color: "#bd82ff",
+    crop: null
+  },
+  {
+    id: "andrey",
+    name: "Андрей",
+    description: "Участник спасения трёхсотых и создатель чуда",
+    rarity: "LEGENDARY",
+    chance: 30,
+    color: "#ffb347",
+    crop: null
+  }
+]
+
 
 /* ==================================================
    ОСНОВНОЙ КОД
